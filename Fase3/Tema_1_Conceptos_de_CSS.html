@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title> Flex Box y CSS Grid </title> 
+        <link rel="stylesheet" href="css/Stylesheet_Tema_1.css"/>
+        <body>
+            <header> 
+                <h1>Flex Box y CSS Grid</h1> 
+                <nav class="navegacion">
+                    <ul class="menu">
+                        <li><a href="Inicio.html">Inicio</a></li>
+                        <li><a href="#" >Temas</a>
+                            <ul class="submenu">
+                                <li><a href="Tema_1_Conceptos_de_CSS.html">Conceptos Basicos de CSS</a></li>
+                                <li><a href="#">Tema 2</a></li>    
+                            </ul>
+                        </li>
+                        <li><a href="#">Recursos Digitales</a>
+                            <ul class="submenu">
+                                <li><a href="#">Recurso 1</a></li>
+                                <li><a href="#">Recurso 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Aprendizaje</a>
+                            <ul class="submenu">
+                                <li><a href="#">Actividad 1</a></li>
+                                <li><a href="#">Actividad 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Acerca de</a>
+                            <ul class="submenu">
+                                <li><a href="#">Autor</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Login</a></li>
+                     </ul>
+                </nav>
+                <h2>Conceptos Basicos del Diseño en CSS</h2>
+                <section>
+                <div id="Contenedor_1">
+                    <h4>Flujo normal del documento: Display block, inline e inline-block</h4>
+                    <br>
+                    <article>
+                        <h4>1. Display</h4>
+                        <p class="justify">Define el tipo de visualización de un elemento.</p>
+                        <p class="justify">Cuando usamos `display: flex;` o `display: grid;` Nos centramos más en los valores y no en la propiedad por si sola</p>
+                        <br>
+                        <h4>2. Block and Inline elements</h4>
+                        <p class="justify">Block ⇒ Se extienden ocupando todo el espacio disponible para ellos</p>
+                        <p class="justify">Inline ⇒ Son como palabras en una oración, una después de otra, se separan por medio de un espacio en blanco entre ellos</p>
+                        <br>
+                        <p class="justify">El comportamiento de los elementos en bloque y en línea es fundamental para CSS y el hecho de que un documento HTML marcado correctamente será 
+                            legible por defecto. Este diseño se conoce como "Diseño de bloque y en línea" o "Flujo normal" porque esta es la forma en que los elementos se 
+                            presentan si no les hacemos nada más.
+                        </p>
+                        <h4>3. Inner y Outer</h4>
+                        <p class="justify">
+                            Block e Inline definen los valore externos e internos de visualización. Lo que significa es que cuando usamos `display: grid;` estamos diciendo `display: block-grid;`.
+                        </p>
+                        <br>
+                        <p class="justify">Un elemento que tenga los atributos de **bloque** puede establecer: Ancho, Alto, Padding, Margin, Estirarse en todo el espacio</p>
+                        <p class="justify">Pero los hijos de un contenedor `display: grid;` se les ha dado un valor interno de grid. Esta forma de pensar es util porque cuando usamos `display: inline-flex;`. 
+                            Pensaremos que el primer valor es el comportamiento externo y el segundo valor es el interno del contenedor. Siempre volveremos al **flujo normal del documento**.
+                        </p>
+                        <br>
+                        <p class="negrita">Si trabajamos de esta forma obtendremos:</p>
+                        <p class="justify">>>> Flujo más agradable y legible</p>
+                        <p class="justify">>>> CSS mucho más fácil</p>
+                        <p class="justify">>>> Menos probable de tener problemas de accesibilidad (ya que está trabajando con el orden de los documentos que es exactamente lo que está haciendo un lector de pantalla o 
+                            una persona que revisa el documento)
+                        </p>
+                        <p>
+                            Tomado de: <a href="https://www.notion.so/Flujo-normal-del-documento-Display-block-inline-e-inline-block-48c9b86e99a1468c91bf4cab834459a0">Flujo normal del documento: Display block, inline e inline-block</a>
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <br>
+            <section>
+            <h2>Contextos de formato: Formato de Contexto de Bloque (BFC)</h2>
+            <div id="Contenedor_2">
+                    <article>
+                    <br>
+                    <p class="justify">BFC: Block Formatting Context. Es un mini layout dentro de otro layout. O sea es el layout interno de un elemento, que se comporta de manera independiente a como se comporta a su layout contenedor. 
+                        Un BFC puede utilizar position: absolute o fixed. En el caso de display: inline-block, table-cell o table-caption.
+                    </p>
+                    <br>
+                    <img class="img_1" src="img/css_1.png">
+                    <br>
+                    <br>
+                    <p class="justify">
+                        Tenemos un elemento flotante en el ejemplo anterior, en el cual las letras rodean al mismo, pero que pasaría si quitamos ese texto de alrededor.
+                    </p>
+                    <br>
+                    <img class="img_1" src="img/css_2.png">
+                    <br>
+                    <br>
+                    <p class="justify">
+                        El layout interno se rompe una vez quitado el mismo
+                    </p>
+                    <br>
+                    <img class="img_2" src="img/css_3.png">
+                    <br>
+                    <br>
+                    <p class="justify">
+                        Si analizamos el elemento, lo que está pasando es que reducimos el contenedor, pero en el exterior se está creando un margen, pero tiene solución
+                    </p>
+                    <br>
+                    <img class="img_1" src="img/css_4.png">
+                    <br>
+                    <br>
+                    <p class="justify">
+                        Si usamos `overflow: auto;` se arregla
+                    </p>
+                    <br>
+                    <p class="negrita">¿Por qué funciona?</p>
+                    <p class="justify">
+                        >>> Porque la propiedad overflow crea un BFC si su valor es diferente al inicial (visible)
+                    </p>
+                    <p class="justify">
+                        >>> Una característica de BFC es que contiene flotantes
+                    </p>
+                    <br>
+                    <p class="negrita">¿Qué más crea un BFC?</p>
+                    <p class="justify">> Utilizar `position: absolute` o `position: fixed`</p>
+                    <p class="justify">El uso de</p>
+                    <p class="justify">> `display: inline-block`</p>
+                    <p class="justify">> `display: table-cell`</p>
+                    <p class="justify">> `display: table-caption`</p>
+                    <br>
+                    <h4 class="justify">Flexbox y Grid</h4>
+                    <p class="justify">
+                        > Ambos formatos nacieron con la intensión de facilitar el diseño de la página
+                    </p>
+                    <p class="justify">
+                        > Flexbox y CSS Grid también crean algo así como un BFC, excepto que se describen como:
+                    </p>
+                    <br>
+                    <h4 class="justify">Flexbox</h4>
+                    <p class="justify">
+                        > Contexto de formato flexible ⇒ El elemento está participando en un diseño flexible
+                    </p>
+                    <p class="justify">
+                        > Se basa en un formato donde se le da flexibilidad a los elementos y al contenedor            
+                    </p>
+                    <br>
+                    <h4 class="justify">CSS Grid</h4>
+                    <p class="justify">
+                        > Contexto de formato de cuadricula ⇒ El elemento está participando en un diseño de cuadricula
+                    </p>
+                    <p class="justify">
+                        > Adquiere un formato de cuadricula realmente fácil de ordenar
+                    </p>
+                    <p class="justify">
+                        > `display: inline-block` crea un BFC y su hermano `display: flow-root`
+                    </p>
+                    <p class="justify">
+                        > `display: inline-block` ⇒ Da un BFC en una caja en línea
+                    </p>
+                    <p class="justify">
+                        > Consta en una fusión de ambas partes, donde al igual que inline-flex e inline-block, externamente 
+                        el elemento se sitúa de forma inline, pero por dentro puede adoptar propiedades block como width, left, etc…
+                    </p>
+                    <p class="justify">
+                        > `display: flow-root` ⇒ Da un BFC en una caja de bloque
+                    </p>
+                    <p class="justify">
+                        > Permite posicionar correctamente los elementos float (que, al ser float, se descolocan del flujo, y al resetearlo 
+                        lo vuelve a ubicar) esto es genial para casos donde tienes que usar elementos flotantes y no quieres que se te desordene 
+                        toda la caja.
+                    </p>
+                    <p class="justify">
+                        > Todo lo trabajamos bajo los conceptos de block e inline y se explica el diseño de CSS bajo estos dos conceptos
+                    </p>
+                    <br>
+                    <p>
+                        Tomado de: <a href="https://www.notion.so/Contextos-de-formato-Formato-de-Contexto-de-Bloque-BFC-36ff00a8bfa7489d98b7de878aea2ca8">Contextos de formato: Formato de Contexto de Bloque (BFC)</a>
+                    </p>
+                    </article>
+                </div>
+        </section>
+        <br>
+        <section>
+            <h2>Posicionamiento</h2>
+            <div id="Contenedor_3">
+                <article>
+                    <br>
+                    <p class="justify">
+                        > El contexto de apilamiento es la conceptualización tridimensional de los elementos HTML a lo largo de un eje-Z imaginario relativo al usuario que se asume está de cara al viewport o página web. 
+                        Los elementos HTML ocupan este espacio por orden de prioridad basado en sus atributos.
+                    </p>
+                    <br>
+                    <p class="negrita">
+                        Cuando trabajamos con la web debemos trabajar con 3 ejes:
+                    </p>
+                    <p class="justify">
+                        > Ejes X & Y
+                    </p>
+                    <p class="justify">
+                        > Eje Z imaginario ⇒ Desde la pantalla hasta la vista del usuario
+                    </p>
+                    <p class="justify">
+                        > Ejemplo ⇒ Un modal se pone encima de todo nuestro sitio web
+                    </p>
+                    <p class="justify">
+                        > El contexto de apilamiento es como una pila que se va ubicando por orden de prioridad
+                    </p>
+                    <p class="justify">
+                        > No todos los elementos pueden crearlo
+                    </p>
+                    <br>
+                    <p class="negrita">
+                        Un contexto de apilamiento es formado, en cualquier lugar del documento, por cualquier elemento que:
+                    </p>
+                    <p class="justify">
+                        - Sea el elemento raíz (HTML)
+                    </p>
+                    <p class="justify">
+                        Tenga posición (absoluta o relativa) con un valor `z-index` distinto de `auto` 
+                    </p>
+                    <p class="justify">
+                        `Position: fixed`
+                    </p>
+                    <p class="justify">
+                        Un elemento flex con un valor `z-index` distinto de `auto`, que sera el elemento padre `display: flex/inline-flex`
+                    </p>
+                    <p class="justify">
+                        Sean elementos con un valor `opacity` menor de 1
+                    </p>
+                    <p class="justify">
+                        Elementos con un valor `transform` distinto de `none` 
+                    </p>
+                    <p class="justify">
+                        Elementos con un valor `mix-blend-mode` distinto de `normal`
+                    </p>
+                    <p class="justify">
+                        Elementos con un valor `filter` distinto de `none`
+                    </p>
+                    <p class="justify">
+                        Elementos con un valor `perspective` distinto de `none`
+                    </p>
+                    <p class="justify">
+                        Elementos con un valor `isolation` igual a `isolate`
+                    </p>
+                    <p class="justify">
+                        Especifican cualquier atributo superior en `will-change` incluso si no especificas valores para estos atributos directamente
+                    </p>
+                    <p class="justify">
+                        Elementos con un valor `-webkit-overflow-scrolling` igual a `touch`
+                    </p>
+                    <br>
+                    <img class="img_1" src="img/css_5.png">
+                    <br>
+                    <br>
+                    <p>
+                        Tomado de: <a href="https://www.notion.so/Posicionamiento-8755e5d0df854505bbf86861973162a6">Posicionamiento</a>
+                    </p>
+                </article>
+            </div>
+        </section>
+            </header>      
+    </head>
+</html>
