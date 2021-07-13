@@ -78,9 +78,9 @@ header{
     border-radius: 15px;
     border: solid 2px black;
     background-color: #dddddd;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-right: 100px;
-    width: 570px;
+    width: 475px;
     height: 470px;
     top: 0px;
 }
@@ -104,7 +104,7 @@ header{
     line-height: 2.5em;
     text-align: justify;
     margin-left: 50px;
-    margin-right: 100px;
+    margin-right: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
 }
@@ -129,17 +129,17 @@ footer{
     border-radius: 15px;
     border: solid 2px black;
     background-color: #dddddd;
-    margin-left: 100px;
-    margin-right: 100px;
-    width: 1100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 1000px;
     height: 270px;
 }
 
 #intro{
     position: relative;
-    margin-left: 500px;
-    margin-right: -140px;
-    top: -170px;
+    margin-left: 350px;
+    margin-right: -180px;
+    top: -190px;
 }
 
 #description{
@@ -147,7 +147,7 @@ footer{
     border-radius: 15px;
     border: solid 2px black;
     background-color: #dddddd;
-    margin-left: 700px;
+    margin-left: 550px;
     margin-right: 100px;
     width: 500px;
     height: 470px;
@@ -173,4 +173,11 @@ footer{
     width: 300px;
     height: 150px;
     top: -430px;
+}
+
+#timeline_facebook{
+    position: relative;
+    margin-left: 1060px;
+    margin-right: 10px;
+    top: 50px;
 }
