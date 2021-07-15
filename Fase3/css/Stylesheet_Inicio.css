@@ -181,3 +181,16 @@ footer{
     margin-right: 10px;
     top: 50px;
 }
+
+footer{
+    position: relative;
+    text-align: justify;
+    margin-left: 250px;
+    margin-right: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: -400px;
+}
+
+.weight{
+    font-weight: bold;
+}
