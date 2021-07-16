@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title> Flex Box y CSS Grid </title> 
+        <link rel="stylesheet" href="css/Stylesheet_Tema_1.css"/>
+        <body>
+            <header> 
+                <h1>Flex Box y CSS Grid</h1> 
+                <nav class="navegacion">
+                    <ul class="menu">
+                        <li><a href="Inicio.html">Inicio</a></li>
+                        <li><a href="#" >Temas</a>
+                            <ul class="submenu">
+                                <li><a href="Tema_1_Conceptos_de_CSS.html">Conceptos Basicos de CSS</a></li>
+                                <li><a href="Tema_2_FlexBox_o_CSS_Grid.html">Flexbox o CSS Grid</a></li>    
+                            </ul>
+                        </li>
+                        <li><a href="#">Recursos Digitales</a>
+                            <ul class="submenu">
+                                <li><a href="Recurso_Digital_1.html">Recurso Flujo Normal del Documento</a></li>
+                                <li><a href="Recurso_Digital_2.html">Recurso Diferencias entre Flexbox y CSS Grid</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Aprendizaje</a>
+                            <ul class="submenu">
+                                <li><a href="Actividad_1.html">Actividad 1</a></li>
+                                <li><a href="Actividad_2.html">Actividad 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Acerca de</a>
+                            <ul class="submenu">
+                                <li><a href="Acerca_De.html">Autor</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Login</a></li>
+                     </ul>
+                </nav>
+                <h2>Diferencias entre Flexbox y CSS Grid</h2>
+                <section>
+                <div id="Contenedor_1">
+                    <br>
+                    <article>
+                       <h4 class="negrita">Flexbox</h4>
+                       <p class="justify">
+                        Es un método que puede ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de 
+                        alineación
+                       </p>
+                       <p class="justify">
+                        Es unidimensional ⇒ Una sola dirección
+                       </p>
+                       <br>
+                       <h4 class="negrita">CSS Grid</h4>
+                       <p class="justify">
+                        Es un sistema de diseño que permite al autor alinear elementos en columnas y filas
+                       </p>
+                       <p class="justify">
+                           Es bidimensional
+                       </p>
+                       <p>
+                           Tomado de: <a href="https://www.notion.so/Diferencias-entre-Flexbox-y-CSS-Grid-2c357d17d73943c387ec598fd60f8ced">https://www.notion.so/Diferencias-entre-Flexbox-y-CSS-Grid-2c357d17d73943c387ec598fd60f8ced</a>
+                       </p>
+                       <br>
+                       <h4 class="justify">Similitudes entre Flexbox y CSS Grid</h4>
+                       <p class="justify">
+                        Flexbox y CSS Grid tienen 2 similitudes: Relaciones Padres e hijos inmediatos y ejes de alineamiento
+                       </p>
+                       <br>
+                       <h4 class="negrita">Relaciones Padres e hijos inmediatos</h4>
+                       <p class="justify">
+                        Tantos los padres tienen hijos, pero los hijos también pueden ser padres
+                       </p>
+                       <p class="justify">
+                        Si se define correctamente que contenedores serán padre, hijos o ambos entonces sera más sencillo definir la técnica
+                       </p>
+                       <p class="justify">
+                        Segun a eso tendremos propiedades para padres e hijos
+                       </p>
+                       <br>
+                       <h4 class="justify">Ejes de alineamiento</h4>
+                       <p class="justify">
+                        CSS siempre tienen dos axis o ejes:
+                       </p>
+                       <p class="justify">
+                        Justify ⇒ inline axis (row axis)
+                       </p>
+                       <p class="justify">
+                        Align ⇒ Block axis (column axis)
+                       </p>
+                       <p class="justify">
+                        Las propiedades tienen un inicio (start) y un final (end) 
+                       </p>
+                       <p class="justify">
+                        Por defecto de izquierda a derecha para inline
+                       </p>
+                       <p class="justify">
+                        Por defecto de arriba a abajo para block 
+                       </p>
+                       <br>
+                       <p>
+                           Tomado de: <a href="https://www.notion.so/Similitudes-entre-Flexbox-y-CSS-Grid-94193a73d56e4ba7b14ed647ddee5f08">https://www.notion.so/Similitudes-entre-Flexbox-y-CSS-Grid-94193a73d56e4ba7b14ed647ddee5f08</a>
+                       </p>
+                    </article>
+                </div>
+            </section>
+            <br>
+            <section>
+            <h2>¿Puedo trabajar con Flexbox y CSS Grid al tiempo?</h2>
+            <div id="Contenedor_2_1">
+                    <article>
+                        <br>
+                    <p class="negrita">
+                        ¿Puedo trabajar con Flexbox y CSS Grid al tiempo?
+                    </p>
+                    <p class="justify">
+                        - Si
+                    </p>
+                    <p class="justify">
+                        - Pero va a depender del diseño que tengamos o necesitemos
+                    </p>
+                    <p class="justify">
+                        - por ejemplo, esta pantalla, si identificamos los elementos        
+                    </p>
+                    <img class="img_1" src="img/css_6.png">
+                    <br>
+                    <br>
+                    <p>
+                        Podremos observar que necesitaremos un contenedor 
+                    </p>
+                    <br>
+                    <img class="img_1" src="img/css_7.png">
+                    <p class="justify">
+                        Este contenedor tendrá hijos, los cuales podemos definir por dentro con flexbox
+                    </p>
+                    <br>
+                    <br>
+                    <img class="img_1" src="img/css_8.png">
+                    <br>
+                    </article>
+                </div>
+        </section>
+        <br>
+        <section>
+            <h2>Posicionamiento</h2>
+            <div id="Contenedor_3">
+                <article>
+                    <br>
+                    <p class="negrita">
+                        ¿Cuándo usar Flexbox y cuándo usar CSS Grid?
+                    </p>
+                    <p class="justify">
+                        Flexbox es más apropiados para componentes de una aplicación y diseños de pequeña escala
+                    </p>
+                    <br>
+                    <br>
+                    <img class="img_1" src="img/css_9.png">
+                    <br>
+                    <p class="justify">
+                        CSS Grid está diseñado para diseños de mayor escala
+                    </p>
+                    <br>
+                    <img class="img_1" src="img/css_10.png">
+                    <br>
+                    <br>
+                    <p>
+                        Tomado de: <a href="https://www.notion.so/Cu-ndo-usar-Flexbox-y-cu-ndo-usar-CSS-Grid-0de76bc1f38b41c59de298167a6543a3">https://www.notion.so/Cu-ndo-usar-Flexbox-y-cu-ndo-usar-CSS-Grid-0de76bc1f38b41c59de298167a6543a3</a>
+                    </p>
+                </article>
+            </div>
+        </section>
+        <footer>
+            <h4>Datos del Autor</h4>
+            <p class="weight">Correo:</p>
+            <p>jlramosbe@unadvirtual.edu.co</p>
+            <p class="weight">Skype:</p>
+            <p>live:donko_2609</p>
+        </footer> 
+            </header>      
+    </head>
+    <aside>
+        <iframe id="timeline_facebook_1" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </aside>
+</html>
