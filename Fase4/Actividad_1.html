@@ -7,6 +7,13 @@
         <link rel="stylesheet" href="css/bootstrap-grid.min.css"/>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascrip" src="js/jquery-3.6.0.min.js"></script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Simple Sidebar - Start Bootstrap Template</title>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
         <body>
             <header> 
                 <h1>Flex Box y CSS Grid</h1> 
@@ -39,20 +46,70 @@
                         <li><a href="#">Login</a></li>
                      </ul>
                 </nav>
-               
+                <div class="d-flex" id="wrapper">
+                    <!-- Sidebar-->
+                    <div class="border-end bg-white" id="sidebar-wrapper">
+                        <div class="sidebar-heading border-bottom bg-light">Unidad 1 -- Conceptos Basicos de CSS</div>
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Actividad_1.html">La importancia de recordar herramientas existentes</a>
+                            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Unidad_1_2.html">Flujo Normal del Documento</a>
+                            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Unidad_1_3.html">Formato de Contexto de Bloque (BFC)</a>
+                            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="Unidad_1_4.html">Posicionamiento + Dinamica</a>
+                            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Quiz</a>
+                          <!-- <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Status</a> --> 
+                        </div>
+                    </div>
+                    <!-- Page content wrapper-->
+                    <div id="page-content-wrapper">
+                        <!-- Top navigation-->
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                            <div class="container-fluid">
+                                <button class="btn btn-primary" id="sidebarToggle">Contraer Menu</button>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                        
+                                        <li class="nav-item"><a class="nav-link" href="Unidad_1_2.html">Siguiente</a></li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#!">Action</a>
+                                                <a class="dropdown-item" href="#!">Another action</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#!">Something else here</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <!-- Page content-->
+                        <div class="container-fluid" id="fondo">
+                            <h1 class="mt-4">Unidad 1-- Conceptos Basicos de CSS</h1>
+                            <p>
+                                <iframe src="https://docs.google.com/viewer?srcid=1Ae0IIwkZG9FkqGlHAZ9Nm43p1rJZ3UaR&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="70%" height="680px"></iframe>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bootstrap core JS-->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+                <!-- Core theme JS-->
+                <script src="js/scripts.js"></script>
                     
-                </section>  
-                <footer>
+                 
+                <!--<footer>
                     <h4>Datos del Autor</h4>
                     <p class="weight">Correo:</p>
                     <p>jlramosbe@unadvirtual.edu.co</p>
                     <p class="weight">Skype:</p>
                     <p>live:donko_2609</p>
-                </footer>          
+                </footer>     -->     
             </header>      
     </head>
     <aside>
-        <iframe id="timeline_facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+       <!-- <iframe id="timeline_facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> -->
     </aside>  
     
 </html>

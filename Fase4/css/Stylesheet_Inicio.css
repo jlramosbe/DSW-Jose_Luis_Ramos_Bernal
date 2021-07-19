@@ -194,3 +194,7 @@ footer{
 .weight{
     font-weight: bold;
 }
+
+#fondo{
+    background-color: rgba(0, 217, 255, 0.664);
+}
